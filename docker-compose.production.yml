@@ -1,0 +1,46 @@
+version: '3.8'
+
+volumes:
+  db_data:
+
+services:
+  proxy:
+    build:
+      context: ./
+      dockerfile: ./proxy/Dockerfile
+    ports:
+      - 80:80
+
+  frontend:
+    build:
+      context: ./
+      dockerfile: ./apps/frontend/Dockerfile
+    ports:
+      - 4200:80
+
+  backend:
+    build:
+      context: ./
+      dockerfile: ./apps/backend/Dockerfile
+    environment:
+      PORT: 3001
+      POSTGRES_HOST: 
+      POSTGRES_DB: project2024
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: salasana
+    ports:
+      - 3001:3001
+
+  db:
+    build:
+      context: ./
+      dockerfile: ./db/Dockerfile
+    environment:
+      POSTGRES_DB: project2024
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: salasana
+    ports:
+      - 5432:5432
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+      - db_data:/var/lib/postgresql/data

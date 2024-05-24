@@ -1,0 +1,171 @@
+{
+  "tenants": [
+    {
+      "id": "1",
+      "name": "K-Market"
+    },
+    {
+      "id": "2",
+      "name": "S-Market"
+    },
+    {
+      "id": "3",
+      "name": "Tokmanni"
+    },
+    {
+      "id": "4",
+      "name": "Kiteen Apteekki"
+    },
+    {
+      "id": "5",
+      "name": "Kiteen Kansanopisto"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Anna",
+      "email": "abcde@gmail.com",
+      "tenantId": "1",
+      "contactNumber": "0461234567"
+    },
+    {
+      "id": "2",
+      "name": "Mikko",
+      "email": "fghij@gmail.com",
+      "tenantId": "2",
+      "contactNumber": "0461234567"
+    },
+    {
+      "id": "3",
+      "name": "Elina",
+      "email": "klmno@gmail.com",
+      "tenantId": "3",
+      "contactNumber": "0461234567"
+    },
+    {
+      "id": "4",
+      "name": "Janne",
+      "email": "pqrst@gmail.com",
+      "tenantId": "4",
+      "contactNumber": "0461234567"
+    },
+    {
+      "id": "5",
+      "name": "Pedro",
+      "email": "uvwxyz@gmail.com",
+      "tenantId": "5",
+      "contactNumber": "0461234567"
+    }
+  ],
+  "locations": [
+    {
+      "id": "1",
+      "locationName": "K-Market Kitee",
+      "address": "Kauppakatu 9",
+      "geocode": {
+        "lat": 62.0968,
+        "lng": 30.1421
+      },
+      "tenantId": "1"
+    },
+    {
+      "id": "2",
+      "locationName": "S-market Kitee",
+      "address": "Opistontie 7",
+      "geocode": {
+        "lat": 62.0968,
+        "lng": 30.1461
+      },
+      "tenantId": "2"
+    },
+    {
+      "id": "3",
+      "locationName": "Hutsi",
+      "address": "Kiteentie 6",
+      "geocode": {
+        "lat": 62.0938,
+        "lng": 30.1584
+      },
+      "tenantId": "3"
+    },
+    {
+      "id": "4",
+      "locationName": "ABC Kitee",
+      "address": "Kiteentie 16",
+      "geocode": {
+        "lat": 62.0992,
+        "lng": 30.1317
+      },
+      "tenantId": "4"
+    },
+    {
+      "id": "5",
+      "locationName": "Kiteen Kansanopisto",
+      "address": "Opistontie 7",
+      "geocode": {
+        "lat": 62.0960,
+        "lng": 30.1390
+      },
+      "tenantId": "5"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "1",
+      "locationId": "1",
+      "value": "9",
+      "unit": "kw/h",
+      "time": "1"
+    },
+    {
+      "id": "2",
+      "locationId": "2",
+      "value": "13",
+      "unit": "kw/h",
+      "time": "2"
+    },
+    {
+      "id": "3",
+      "locationId": "3",
+      "value": "2",
+      "unit": "kw/h",
+      "time": "3"
+    },
+    {
+      "id": "4",
+      "locationId": "4",
+      "value": "4",
+      "unit": "kw/h",
+      "time": "4"
+    },
+    {
+      "id": "5",
+      "locationId": "5",
+      "value": "7",
+      "unit": "kw/h",
+      "time": "5"
+    },
+    {
+      "id": "4d3b",
+      "locationId": "2",
+      "value": "sdfa",
+      "unit": "awerfw",
+      "time": "werwe"
+    },
+    {
+      "id": "c148",
+      "locationId": "4",
+      "value": "23",
+      "unit": "asdf",
+      "time": "asdf"
+    },
+    {
+      "id": "c6fc",
+      "locationId": "5",
+      "value": "aaaaaaaaaaaa",
+      "unit": "aaaaaaaaa",
+      "time": "aaaaaaaaaaaa"
+    }
+  ]
+}
